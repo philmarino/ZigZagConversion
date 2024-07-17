@@ -6,10 +6,10 @@ def convert(s, numRows):
     #initialize output
     output = []
     for each in range(numRows):
-        output.append([])
+        output.append('')
 
     while stringIndex < len(s):
-        output[whichRow].append(s[stringIndex])
+        output[whichRow] += (s[stringIndex])
         stringIndex += 1
         whichRow += direction
         if whichRow == numRows - 1:
